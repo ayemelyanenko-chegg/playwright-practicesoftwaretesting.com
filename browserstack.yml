@@ -1,0 +1,24 @@
+userName: ${BROWSERSTACK_USERNAME}
+accessKey: ${BROWSERSTACK_ACCESS_KEY}
+framework: playwright
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: chrome
+    browserVersion: latest
+    playwrightConfigOptions:
+      setup:
+        - name: 'setup'
+          testMatch: '/.*\.setup\.ts/'
+browserstackLocal: true
+buildName: bstack-geolocation-demo
+buildIdentifier: ${BUILD_NUMBER}
+projectName: BrowserStack Sample
+testObservability: true
+debug: true
+consoleLogs: info
+browserstack.geoLocation: MX
+parallelsPerPlatform: 3
+browserStackLocalOptions:
+  forceLocal: true
+acceptInsecureCerts: true

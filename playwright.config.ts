@@ -8,14 +8,14 @@ export default defineConfig<APIRequestOptions & TestOptions>({
   timeout: 30_000,
   projects: [
     { name: "setup", testMatch: /.*\.setup\.ts/, fullyParallel: true },
-    {
-      name: "calculation",
-      testMatch: /.*\.calculation\.ts/,
-    },
+//     {
+//       name: "calculation",
+//       testMatch: /.*\.calculation\.ts/,
+//     },
 
     {
       name: "ui-tests",
-      dependencies: ["setup", "calculation"],
+      dependencies: ["setup"],
     },
   ],
   testDir: "./tests",

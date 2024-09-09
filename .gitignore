@@ -10,3 +10,12 @@ coverage-output.txt
 # System Files
 .DS_Store
 Thumbs.db
+playwright-browserstack-sdk.config.temp.json
+playwright-browserstack-sdk.config.ts
+local.log
+browserstack.err
+browserstackSetupConfig.json
+performance-report.json
+/log
+.idea
+.obs*
